@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array.from
+        //iterate over an object
+        const obj_arr ={
+        length:2,
+        0:101,
+        1:'kannan'
+        }
+        console.log(obj_arr)
+        const arr = Array.from(obj_arr)
+        console.log(arr)
+        for(const element of arr){
+        console.log(element);
+        }
+        console.log(Array.from('Javascript'))
+        let setObj = new Set(['Training',10,20,20,'Training'])
+        console.log(Array.from(setObj))
+        console.log(Array.from([10,20,30,40],n=>n+1))
+        </script>
+</body>
+</html>

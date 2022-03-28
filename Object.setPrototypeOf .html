@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let emp ={name:'A',location:'Mumbai',basic:5000}
+ let mgr = {name:'B'}
+ console.log(emp.__proto__ == Object.prototype)
+ console.log(mgr.__proto__ == Object.prototype)
+ console.log(mgr.__proto__ ===emp.__proto__)
+ Object.setPrototypeOf(mgr,emp)
+ console.log(mgr.__proto__ == Object.prototype) //false
+ console.log(mgr.__proto__ === emp)
+ console.log(mgr.location,mgr.basic)
+    </script>
+</body>
+</html>
